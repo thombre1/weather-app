@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         //unlock weather
         weatherInfo.classList.remove('hidden');
         errorMessage.classList.add('hidden');
-        tempreatureDisplay.textContent = `Tempreature: ${main.temp} K`;
+        tempreatureDisplay.textContent = `Tempreature: ${(main.temp - 273).toFixed(2)} °C`;
         descriptionDisplay.textContent = `Overview: ${weather[0].description}`;
         tempreatureDisplay.classList.add('flex','justify-center','mb-4','font-semibold','text-2xl');
         descriptionDisplay.classList.add('flex','justify-center','font-mono','mb-4');
