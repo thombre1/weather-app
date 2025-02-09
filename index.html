@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="flex justify-center flex-col bg-slate-900 text-white h-screen">
+    <div class="flex justify-center">
+        <div class="container bg-slate-800 grid grid-rows-2 justify-center h-80 w-96 align-middle mt-36 rounded-md">
+            <h1 class="main-heading text-3xl font-extrabold mt-6 grid justify-center">Weather App</h1>
+            <div class="input-container">
+                <input type="text" id="city-input" placeholder="Enter City Name" class="border-1 m-4 p-2">
+                <button id="get-weather-btn" class="bg-sky-200 p-2 text-black hover:bg-sky-300 hover:cursor-pointer ">Get Weather</button>
+            </div>
+            <div id="weather-info" class="hidden">
+                <h2 id="city-name"></h2>
+                <p id="tempreature"></p>
+                <p id="description"></p>
+            </div>
+            <p id="error-message" class="hidden">City not found, please try again.</p>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+<!-- margin needs to be auto while the body has 100% vph -->
+<div class="grid grid-flow-row grid-rows-1 mt-auto font-mono"><footer class="flex justify-center">Made by:<span>Aditya Thombre</span></footer></div>
+
+</html>
